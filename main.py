@@ -1,8 +1,6 @@
 import turtle
 
-# ==========================
 # ESPECIFICACIONES DE COLORES
-# ==========================
 palette = {
     0: "#fff0f5",  # Lavender Blush
     1: "#ffb6c1",  # Light Pink
@@ -15,9 +13,7 @@ palette = {
     8: "#4b0082",  # Indigo Rosado
 }
 
-# ==========================
 # CONFIGURACIÓN DE VENTANA
-# ==========================
 turtle.setup(width=800, height=800)
 turtle.bgcolor("white")
 turtle.speed(0)
@@ -25,18 +21,16 @@ turtle.hideturtle()
 turtle.colormode(255)
 turtle.tracer(0, 0)
 
-# ==========================
+
 # CARGA DE MATRIZ DESDE ARCHIVO
-# ==========================
 matriz = []
 with open("pixel_art_100x100.txt", "r") as f:
     for line in f:
         fila = [int(x) for x in line.split()]
         matriz.append(fila)
 
-# ==========================
+
 # DIBUJO DE LA MATRIZ
-# ==========================
 pixel_size = 5
 
 for i in range(len(matriz)):
@@ -56,3 +50,4 @@ for i in range(len(matriz)):
 
 turtle.update()
 turtle.done()
+
