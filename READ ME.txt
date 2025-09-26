@@ -1,4 +1,4 @@
-# Práctica 3 - Manejo de Archivos Numéricos con Turtle 🐢
+# Práctica 3 - Manejo de Archivos Numéricos con Turtle
 
 ## Descripción
 En esta práctica se carga una matriz **100x100** desde un archivo de texto (`pixel_art_100x100.txt`)
@@ -18,3 +18,4 @@ Cada número en la matriz (0–8) corresponde a un color rosado de la paleta def
 
 ```bash
 python practica3_archivo_numericoG.py
+
